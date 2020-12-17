@@ -1,0 +1,5 @@
+spring:
+  #开始thymeleaf设置
+  thymeleaf:
+    #禁用模板缓存 避免新建标签会显示以前内容
+    cache: false

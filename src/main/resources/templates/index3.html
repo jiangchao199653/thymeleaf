@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="200" style="text-align: center;">
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>index</th>
+        <th>index</th>
+        <th>index大小</th>
+        <th>index 当前的迭代变量</th>
+        <th>index 序号偶数</th>
+        <th>index 序号基数</th>
+
+    </tr>
+    <tr th:each="user,iterStat : ${userList}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${iterStat.index}">index 1</td>
+        <td th:text="${iterStat.count}">index 0</td>
+        <td th:text="${iterStat.size}">index 大小</td>
+        <td th:text="${iterStat.current}">index 当前的迭代变量</td>
+        <td th:text="${iterStat.even}">index 序号偶数</td>
+        <td th:text="${iterStat.odd}">index 序号奇数</td>
+    </tr>
+</table>
+</body>
+</html>
