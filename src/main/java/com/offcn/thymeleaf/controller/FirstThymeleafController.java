@@ -11,7 +11,7 @@ import java.util.*;
 public class FirstThymeleafController {
     @GetMapping("/index")
     public String indexPage(){
-        System.out.println("进入了控制层");
+        System.out.println("进入了控制层11111111111");
         return "index";
     }
 
